@@ -4,6 +4,8 @@ const bodyParser = require("body-parser")
 const morgan = require("morgan")
 const cors = require("cors")
 
+const pokemon = require("./pokemon_app/models/pokemon")
+
 
 //configure
 require("dotenv").config()
@@ -16,6 +18,9 @@ server.use(cors("*"))
 server.use(morgan("dev"))
 server.use(express.json())
 server.use(bodyParser.json())
+
+server.use("/pokemon", pokemon)
+
 
 // // ROUTES
 // server.use("/auth", authRouter)
