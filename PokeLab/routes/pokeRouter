@@ -3,40 +3,31 @@
 
  const express = require("express")
  const pokemon = require("../pokemonapp/pokemon")
+//  const middleware = require("../middleware/middleware")
+
  const pokeRouter = express.Router()
 
 
-
-
 pokeRouter.get("/", (req, res)=>{
+
+    for(let i=0; i<pokemon.length;i++){
+        console.log(pokemon[i].name)
+        }
+
+    for(let i=0; i<pokemon.length;i++){
+        console.log(pokemon[i].name.charAt(0).toUpperCase()+pokemon[i].name.slice(1))
+        }
+
+    for(let i=0; i<pokemon.length;i++){
+        console.log(pokemon[i].img + ".jpg")
+        }
+
+
     res.status(200).json({Pokemon: pokemon})
-
-
     console.log(pokemon)
-
-    const parseData = JSON.parse(pokemon);
-    console.log(parseData.name);
-
-
 })
 
-// pokeRouter.get("/", (req, res)=>{
-//     const body = req.body
-//     const name = req.params.name
-//     pokemon[name] = body
-//     res.status(202).json({Pokemon: pokemon[name]})
-    
-// })
 
-// pokeRouter.route("/name/:name)
-// .get((req, res)=>{
-//     const id = req.params.id
-//     if(id >= fakeBlogData.length){
-//         res.status(404).json({message: "ID Doesn't Exist"})
-//     }else{
-//         res.status(200).json({blog: e
-//     }
-// })
 
 
 module.exports = pokeRouter
