@@ -27,8 +27,6 @@ pokeRoute.post("/", (req, res)=>{
 
 pokeRoute.get("/:name", (req, res)=>{
     const name = req.params.name
-    // returns an array [] of ALL things that match
-    // findOne returns an object of EXACTLY ONE THING
     pokemon.findOne({name: name,}, (err, pokemon)=>{
         if(err){
             res.status(404).json({message: err.message})

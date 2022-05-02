@@ -15,7 +15,7 @@ TASKS:
     Continue working on your Index.jsx view so that you can see:
     The name of each pokemon, as a list item, inside an unordered list
     This list should be dynamically rendered by jsx based on your data from your 'database'
-        DID NOT COMPLETE
+        DID NOT NEED TO COMPLETE :]
 4. Capitalize Pokemon Names, show in "/"
         COMPLETE
 5. Show View req.params.id "/pokemon/:id"
