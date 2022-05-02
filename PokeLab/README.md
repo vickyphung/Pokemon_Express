@@ -5,6 +5,34 @@ Showing Routes with Express
 
 Poke Express
 
+
+
+TASKS:
+1. Set Up Server "/"
+        COMPLETED
+2. Show JSON data in "/pokemon"
+        COMPLETED
+3. Set up your index view to show your pokemon data as list.
+    Continue working on your Index.jsx view so that you can see:
+    The name of each pokemon, as a list item, inside an unordered list
+    This list should be dynamically rendered by jsx based on your data from your 'database'
+        DID NOT COMPLETE
+4. Capitalize Pokemon Names "/pokemon"
+        All I could do was capitalize the names and console log them.
+        Not in the index view because I couldn't complete step 3.
+        HALF COMPLETE
+5. Show View req.params.id "/pokemon/:id"
+        COMPLETED
+6. Add ".jpg" to the end of the Pokemon img data "/pokemon"
+    Without going back to the database and editing it there, add on .jpg to the end of the pokemon's image data
+        Added .jpg to the pokemon img data, but only able to console log. 
+
+NOTES:
+Tried to create middleware to capitalize pokemon names and add .jpg to the end of pokemon image data, failed. 
+The functions are console logged in /pokemon.. 
+
+
+LAB DIRECTIONS:
 Purpose from Curriculum Development Team: Make a Pokemon app that displays data inside server-side rendered views, learners will gain a deeper understanding of what they built in class and should have some fun with doing it. Encourage students to review class material and use it as a guide also encourage them to use the express documentation. Discourage them from using online tutorials to help them with this because they will have difficulty finding an online tutorial that is at the same level as this assignment, it will be either be too advanced or too simple and will in most cases confuse learners away from this assignments purpose. 
 Learning Objectives
 Practicing index and show routes with express
