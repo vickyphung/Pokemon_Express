@@ -1,3 +1,5 @@
+//HORRIBLE MESS IGNORE THIS, IN DEVELOPMENT.
+
 // const pokemon = require("../pokemonapp/pokemon")
 
 //CAPITALIZE POKEMON NAMES

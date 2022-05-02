@@ -28,6 +28,4 @@ pokeRouter.get("/", (req, res)=>{
 })
 
 
-
-
 module.exports = pokeRouter

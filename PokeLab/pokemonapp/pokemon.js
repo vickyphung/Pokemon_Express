@@ -1,8 +1,3 @@
-// You have created a file called pokemon.js
-// Inside of this file, put the following array of pokemon objects. This is your 'database' for tonight's homework, copy and paste it as is! 
-//  Set this 'database' to a variable called pokemon in your server.js file
-
-
 const pokemon = [
     {name: "bulbasaur", img: "http://img.pokemondb.net/artwork/bulbasaur"},
     {name: "ivysaur", img: "http://img.pokemondb.net/artwork/ivysaur"},
