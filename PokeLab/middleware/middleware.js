@@ -23,17 +23,16 @@ function capName(){
 // Oh no! The image is broken because in our database the image links don't have the .jpg ending, let's fix that programatically! Without going back to the database and editing it there, add on .jpg to the end of the pokemon's image data
 
 
-/*
 
-function addJPG(req, res){
-        let updatedImg = [];
-    for(let i=0; i<pokemon.length;i++){
-        let images = (pokemon[i].img + ".jpg")
-        updatedImg.push(images)
-        }
-}
-
-*/
+// function addJPG(req, res){
+//         let updatedImg = [];
+//     for(let i=0; i<pokemon.length;i++){
+//         let images = (pokemon[i].img + ".jpg")
+//         updatedImg.push(images)
+//         }
+// }
 
 
-// module.exports = {capName, addJPG}
+
+
+// module.exports = {addJPG}

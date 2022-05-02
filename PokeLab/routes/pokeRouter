@@ -7,18 +7,19 @@
 
  const pokeRouter = express.Router()
 
-
 pokeRouter.get("/", (req, res)=>{
-
-
     let updatedImg = [];
     for(let i=0; i<pokemon.length;i++){
         let images = (pokemon[i].img + ".jpg")
         updatedImg.push(images)
         }
-
     res.status(200).json({Pokemon: pokemon, UpdatedPictureURL: updatedImg})
 })
 
+// pokeRouter.route("/")
+// .get(middleware.addJPG,(req, res)=>{
+//     res.status(200).json({UpdatedPics: updatedImg})
+// })
 
 module.exports = pokeRouter
+
