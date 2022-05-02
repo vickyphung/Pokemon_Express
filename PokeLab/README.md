@@ -17,20 +17,14 @@ TASKS:
     The name of each pokemon, as a list item, inside an unordered list
     This list should be dynamically rendered by jsx based on your data from your 'database'
         DID NOT COMPLETE
-        console.logged list of pokemon names in "/pokemon"
-4. Capitalize Pokemon Names
-        All I could do was capitalize the names and console log them in "/pokemon"
-        Not in the index view because I couldn't complete step 3.
-        HALF COMPLETE
+4. Capitalize Pokemon Names, show in "/"
+        COMPLETE
 5. Show View req.params.id "/pokemon/:id"
         COMPLETED
-6. Add ".jpg" to the end of the Pokemon img data
+6. Add ".jpg" to the end of the Pokemon img data, in "/pokemon"
     Without going back to the database and editing it there, add on .jpg to the end of the pokemon's image data
-        Added .jpg to the pokemon img data, but only able to console log, in "/pokemon"
-NOTES:
-"/" supposed to show list of pokemon with capitalized names
-"/pokemon" supposed to show pokemon data with updated img data.
-Tried to create middleware to capitalize pokemon names and add .jpg to the end of pokemon image data, unable, so no middleware and functions are just console logged in (/pokemon, pokeRouter).
+        Added .jpg to the pokemon img data, did not replace orignal img data, but added an array of pokemon new image data below
+        HALF COMPLETE
 
 
 LAB DIRECTIONS:
