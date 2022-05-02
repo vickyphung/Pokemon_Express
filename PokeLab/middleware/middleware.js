@@ -8,9 +8,14 @@
 
 /*
 function capName(){
+
+    let capitalNames =[];
     for(let i=0; i<pokemon.length;i++){
-        console.log(pokemon[i].name.charAt(0).toUpperCase()+pokemon[i].name.slice(1))
+        let pokemonNames = (pokemon[i].name.charAt(0).toUpperCase()+pokemon[i].name.slice(1))
+        capitalNames.push(pokemonNames)
         }
+        return capitalNames
+    }
 
 */
 
@@ -21,9 +26,11 @@ function capName(){
 /*
 
 function addJPG(req, res){
+        let updatedImg = [];
     for(let i=0; i<pokemon.length;i++){
-        console.log(pokemon[i].img + ".jpg")
-    }
+        let images = (pokemon[i].img + ".jpg")
+        updatedImg.push(images)
+        }
 }
 
 */

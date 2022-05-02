@@ -10,21 +10,14 @@
 
 pokeRouter.get("/", (req, res)=>{
 
+
+    let updatedImg = [];
     for(let i=0; i<pokemon.length;i++){
-        console.log(pokemon[i].name)
+        let images = (pokemon[i].img + ".jpg")
+        updatedImg.push(images)
         }
 
-    for(let i=0; i<pokemon.length;i++){
-        console.log(pokemon[i].name.charAt(0).toUpperCase()+pokemon[i].name.slice(1))
-        }
-
-    for(let i=0; i<pokemon.length;i++){
-        console.log(pokemon[i].img + ".jpg")
-        }
-
-
-    res.status(200).json({Pokemon: pokemon})
-    console.log(pokemon)
+    res.status(200).json({Pokemon: pokemon, UpdatedPictureURL: updatedImg})
 })
 
 

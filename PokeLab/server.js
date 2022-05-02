@@ -2,6 +2,8 @@ const express = require("express")
 const bodyParser = require("body-parser")
 const morgan = require("morgan")
 
+const pokemon = require("./pokemonapp/pokemon")
+
 const pokeRouter = require("./routes/pokeRouter")
 
 const server = express()
@@ -14,7 +16,14 @@ server.use(bodyParser.json())
 server.use("/pokemon", pokeRouter)
 
 server.get("/", (req, res)=>{
-    res.status(200).json({message: 'Welcome to the Pokemon App!'})
+
+    let capitalNames =[];
+    for(let i=0; i<pokemon.length;i++){
+        let pokemonNames = (pokemon[i].name.charAt(0).toUpperCase()+pokemon[i].name.slice(1))
+        capitalNames.push(pokemonNames)
+        }
+
+    res.status(200).json({message: 'Welcome to the Pokemon App!', Pokemon: capitalNames})
 })
 
 server.get("/pokemon/:id", (req, res)=>{
