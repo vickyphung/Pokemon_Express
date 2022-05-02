@@ -10,26 +10,27 @@ Poke Express
 TASKS:
 1. Set Up Server "/"
         COMPLETED
-2. Show JSON data in "/pokemon"
+2. Set up database. Show JSON data in "/pokemon"
         COMPLETED
 3. Set up your index view to show your pokemon data as list.
     Continue working on your Index.jsx view so that you can see:
     The name of each pokemon, as a list item, inside an unordered list
     This list should be dynamically rendered by jsx based on your data from your 'database'
         DID NOT COMPLETE
-4. Capitalize Pokemon Names "/pokemon"
-        All I could do was capitalize the names and console log them.
+        console.logged list of pokemon names in "/pokemon"
+4. Capitalize Pokemon Names
+        All I could do was capitalize the names and console log them in "/pokemon"
         Not in the index view because I couldn't complete step 3.
         HALF COMPLETE
 5. Show View req.params.id "/pokemon/:id"
         COMPLETED
-6. Add ".jpg" to the end of the Pokemon img data "/pokemon"
+6. Add ".jpg" to the end of the Pokemon img data
     Without going back to the database and editing it there, add on .jpg to the end of the pokemon's image data
-        Added .jpg to the pokemon img data, but only able to console log. 
-
+        Added .jpg to the pokemon img data, but only able to console log, in "/pokemon"
 NOTES:
-Tried to create middleware to capitalize pokemon names and add .jpg to the end of pokemon image data, failed. 
-The functions are console logged in /pokemon.. 
+"/" supposed to show list of pokemon with capitalized names
+"/pokemon" supposed to show pokemon data with updated img data.
+Tried to create middleware to capitalize pokemon names and add .jpg to the end of pokemon image data, unable, so no middleware and functions are just console logged in (/pokemon, pokeRouter).
 
 
 LAB DIRECTIONS:
