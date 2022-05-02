@@ -1,11 +1,10 @@
 # Pokemon_Express
 Pokemon Express Lab
-WISE_Week 6
+WISE_Week 6-7
 Showing Routes with Express
 
 Poke Express
-
-
+SERVER 3000
 
 TASKS:
 1. Set Up Server "/"
