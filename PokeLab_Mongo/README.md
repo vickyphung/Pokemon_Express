@@ -2,10 +2,12 @@ PokeLab, but with MongoDB
 
 SERVER 3500
 
+TASKS (v.3):
+1. Add A Seed Route to Pokemon that adds the entire original pokemon array.
+2. Add a Clear Route to Remove Pokemon from database.
 
-TASKS (updated):
 
-Assignment
+TASKS (v.2):
 Continue working by adding a Post and incorporating Mongoose JS
 
 1. When a makes a get request to the /pokemon route they will see an array of pokemon objects
@@ -14,7 +16,6 @@ Continue working by adding a Post and incorporating Mongoose JS
 
 
 The array of Pokemon from Postman:
-
 {
     "allPokemon": [
         {
@@ -61,3 +62,5 @@ The array of Pokemon from Postman:
         }
     ]
 }
+
+
