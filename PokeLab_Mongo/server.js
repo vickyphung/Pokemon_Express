@@ -139,7 +139,8 @@ server.get("/", (req, res)=>{
         if(err){
             res.status(404).json({message: err.message})
         } else {
-            res.status(200).json({allPokemon})
+            res.status(200).json({message: "Welcome to the Pokemon page. From here, you are able to view all pokemon, seed pokemon (/seed), delete all (/clear), or delete one (/delete/:id). In the /pokemon route, you are able to create a new pokemon or update an existing pokemon. Thanks for visiting!",
+            pocketmonsters: allPokemon})
         }
     })
 })
@@ -166,7 +167,7 @@ server.delete("/clear", (req, res)=>{
     })
 })
 
-//Deltes  pokemon according to specified parameter
+//Deltes pokemon according to specified property/value
 server.delete("/clearone", (req, res)=>{
     pokemon.deleteOne({name: "Ivysaur"}, (err)=>{
         if(err){
@@ -176,6 +177,20 @@ server.delete("/clearone", (req, res)=>{
         }
     })
 })
+
+//Deletes One Pokemon by id
+server.delete("/delete/:id",(req, res)=>{
+    const id = req.params.id
+    pokemon.findByIdAndDelete(id, (err)=>{
+        if(err){
+            res.status(404).json({message: err.message})
+        }else{
+            res.status(204).json({message: "Pokemon deleted."})
+        }
+    })
+})
+
+
 
 server.listen(PORT, ()=>{
     mongoConfig()

@@ -9,7 +9,7 @@ pokeRoute.get("/", (req, res)=>{
         if(err){
             res.status(404).json({message: err.message})
         } else {
-            res.status(200).json({allPokemon})
+            res.status(200).json({message: "What's up. You can create your pokemon here, or update your pokemon using (/:id). Enjoy.", pocketmonsters: allPokemon})
         }
     })
 })
@@ -34,6 +34,7 @@ pokeRoute.post("/", (req, res)=>{
             res.status(400).json({message: err.message})
         } else {
             res.status(201).json({pokemon})
+            console.log("Pokemon created")
         }
     })
 })
@@ -48,31 +49,6 @@ pokeRoute.put("/:id", (req, res)=>{
             res.status(404).json({message: err.message})
         } else {
             res.status(202).json(updatedPokemon)
-        }
-    })
-})
-
-
-//Delete a pokemon using it's name
-pokeRoute.delete("/:name", (req, res)=>{
-    // const name = req.params.name
-    pokemon.deleteOne({name: "Ivysaur"}, (err)=>{
-        if(err){
-            res.status(404).json({message: err.message})
-        }else{
-            res.status(204).json({message: "DELETED"})
-        }
-    })
-})
-
-//Delete using pokemone id
-pokeRoute.delete("/delete/:id",(req, res)=>{
-    const id = req.params.id
-    log.findByIdAndDelete(id, (err)=>{
-        if(err){
-            res.status(404).json({message: err.message})
-        }else{
-            res.status(204).json({message: "Pokemon deleted."})
         }
     })
 })
