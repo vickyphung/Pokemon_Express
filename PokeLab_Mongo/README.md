@@ -2,17 +2,15 @@ PokeLab, but with MongoDB
 
 SERVER 3500
 
-TASKS (v.3):
-1. Add A Seed Route to Pokemon that adds the entire original pokemon array.
-2. Add a Clear Route to Remove Pokemon from database.
-
-
-TASKS (v.2):
-Continue working by adding a Post and incorporating Mongoose JS
-
-1. When a makes a get request to the /pokemon route they will see an array of pokemon objects
-2. When a user makes a request to /pokemon/:name, a user will retrieve that pokemon by name
-3. When a user posts a form it will create a brand new pokemon, and then return the added pokemon
+TASKS
+- Upload to netlify
+- Add route to update pokemon
+- Add A Seed Route to Pokemon that adds the entire original pokemon array.
+- Add a Clear Route to Remove Pokemon from database.
+- Continue working by adding a Post and incorporating Mongoose JS
+- When a makes a get request to the /pokemon route they will see an array of pokemon objects
+- When a user makes a request to /pokemon/:name, a user will retrieve that pokemon by name
+- When a user posts a form it will create a brand new pokemon, and then return the added pokemon
 
 
 The array of Pokemon from Postman:

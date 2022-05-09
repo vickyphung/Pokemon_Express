@@ -116,9 +116,6 @@ const seedPokemon = [
     }
 ]
 
-
-
-
 const mongoConfig = require("./config")
 
 require("dotenv").config()
@@ -136,9 +133,7 @@ server.use("/pokemon", pokemonRoute)
 //     res.status(200).json({message: "API UP!"})
 // });
 
-
-
-
+//Index Route shows all pokemon data
 server.get("/", (req, res)=>{
     pokemon.find((err, allPokemon)=>{
         if(err){
@@ -149,7 +144,7 @@ server.get("/", (req, res)=>{
     })
 })
 
-
+//Seeds all data to MongoDC
 server.get("/seed", (req, res)=>{
     pokemon.insertMany(seedPokemon, (err, allPokemon)=>{
         if(err){
@@ -160,6 +155,7 @@ server.get("/seed", (req, res)=>{
     })
 })
 
+//Deltes all Pokemon data
 server.delete("/clear", (req, res)=>{
     pokemon.deleteMany((err)=>{
         if(err){
@@ -170,7 +166,7 @@ server.delete("/clear", (req, res)=>{
     })
 })
 
-
+//Deltes  pokemon according to specified parameter
 server.delete("/clearone", (req, res)=>{
     pokemon.deleteOne({name: "Ivysaur"}, (err)=>{
         if(err){
@@ -185,8 +181,3 @@ server.listen(PORT, ()=>{
     mongoConfig()
     console.log(`Server is listening: ${PORT}`)
 })
-
-
-
-
-
